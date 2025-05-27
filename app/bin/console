@@ -1,0 +1,17 @@
+#!/usr/local/bin/php
+<?php
+
+declare(strict_types=1);
+
+require_once(__DIR__ . '/../vendor/autoload.php');
+
+try {
+    $app = new \Symfony\Component\Console\Application('BookNet Test');
+
+    $app->add(new \App\Commands\PaymentMethodList());
+
+    exit($app->run());
+} catch (\Throwable $e) {
+    echo "Error: " . $e->getMessage() . PHP_EOL;
+    exit(1);
+}

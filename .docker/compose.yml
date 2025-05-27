@@ -1,0 +1,24 @@
+name: book-net-test
+
+services:
+
+    book_net_postgresql:
+        image: postgres:17.5-alpine
+        container_name: "book-net-postgresql"
+        restart: unless-stopped
+        environment:
+            POSTGRES_USER: "root"
+            POSTGRES_PASSWORD: "toor"
+            POSTGRES_DB: "storage"
+        ports:
+            - "2345:5432"
+        volumes:
+            - ../.sql/:/docker-entrypoint-initdb.d/
+
+    book_net_php_cli:
+        build:
+            dockerfile: Dockerfile
+        container_name: "book-net-php-cli"
+        restart: unless-stopped
+        volumes:
+            - ../app/:/usr/src/app/

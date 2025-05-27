@@ -1,2 +1,0 @@
-# booknet-test
-Booknet Test
