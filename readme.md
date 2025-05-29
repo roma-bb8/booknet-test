@@ -22,7 +22,7 @@ make start
 make test
 ```
 
-### Зайти в PHP контейнер:
+### Зайти в PHP-контейнер:
 
 ```shell
 make app
