@@ -7,8 +7,8 @@
 1. Схема бази даних: `.sql/00-schema.sql`
 2. Початкові дані: `.sql/01-data.sql`
 3. Точка входу: `app/bin/console`
-4. Команда яка виводить дані: `app/src/Commands/PaymentMethodList.php`
-5. Клас `PaymentTypeSelector` переїхав: `app/src/Services/PaymentType/Selector.php`
+4. Команда яка виводить список методів оплати: `app/src/Commands/PaymentMethodList.php`
+5. Основний клас `PaymentTypeSelector` який потрібно було реалізувати, переїхав: `app/src/Services/PaymentType/Selector.php`
 
 ### Розпочати проєкт:
 
