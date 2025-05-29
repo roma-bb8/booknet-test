@@ -1,5 +1,7 @@
 # BookNet
 
+Class `PaymentTypeSelector` move -> `app/src/Services/PaymentType/Selector.php`
+
 [BookNet Test](https://github.com/booknet-company/test)
 
 Start a project:
