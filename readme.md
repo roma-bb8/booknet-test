@@ -4,7 +4,7 @@
 
 Файли, з котрих можна починати ознайомлення:
 
-1. Схема бази даних: `.sql/00-schema.sql`
+1. Схема бази даних: `.sql/00-schema.sql` (Boot priority settings: country (найвищий) -> i18n (на рівні сайту/маркетплейсу) -> general (загальні))
 2. Початкові дані: `.sql/01-data.sql`
 3. Точка входу: `app/bin/console`
 4. Команда яка виводить список методів оплати: `app/src/Commands/PaymentMethodList.php`
